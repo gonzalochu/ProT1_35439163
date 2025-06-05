@@ -2,110 +2,77 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
         <link rel="STYLESHEET" href="miestilo.css">
-        <title>Relojes increibles</title>
-        
+        <link rel="STYLESHEET" href="assets/css/bootstrap.min.css">
+        <title>Relojes increibles</title>        
     </head>
+
+<main>
     <body>
          <header>
             <h1>Bienvenidos</h1>
             <img src="reloj.png">
-                    <nav>
-                        <ul>
-                    <li class="dropdown"> 
-                        <a href="#" class="dropbtn">Productos</a> 
-                        <div class="dropdown-content"> 
-                            <a href="#">Relojes de Mesa</a>
-                            <a href="#">Relojes de Pared</a>
-                            <a href="#">Diseños Personalizados</a>
-                        </div>
-                    </li>
-                        
-                            <li><a href="#">Home</a></li>
-                            <li><a href="whoare.html">Quienes somos</a></li>
-                            <li><a href="about.html">acerca de</a></li>
-                            <li><a href="login.html">login</a></li>
-                        </ul>
-                    </nav>
-                    </header>
-                        <main> 
-
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Buscar productos...">            
-            <button onclick="performSearch()">Buscar</button>
-        </div>
-
+            
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+        </header>
+ 
 
         <div class="divi1">
             <section>
                 <p class="texto1" style="color:rgb(20, 162, 180)">Somos una empresa que se dedica a la 
                     venta de relojes de mesa y pared con diseños únicos e innovadores. 
-                    Utilizamos materia prima de calidad. Elaboramos productos a la medida del cliente.
-                </p>
+                    Utilizamos materia prima de calidad. Elaboramos productos a la medida del cliente.</p>
                 <p>Aquí encontrarás información sobre nuestros productos, comunicate con nosotros y recibí nuestras
-                    novedades.
-                </p>
+                    novedades.</p>
             </section>
-        </div>
+        </div>           
+    </body>
 
-        
-        <div class="carousel-container">
-            <div class="carousel-slide">
-                <img src="relojlindo.png" alt="Reloj lindo">
-                <img src="reloj_jade.png" alt="Reloj en una piedra verde">
-                <img src="relojnegro.png" alt="Reloj negro lindo">
-            </div>
-            <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button> 
-            <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button> 
-        </div>
-    </main>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-        // --- JavaScript para el Carrusel ---
-        const carouselSlide = document.querySelector('.carousel-slide');
-        const carouselImages = document.querySelectorAll('.carousel-slide img');
+</main>
 
-        let counter = 0;
-        const size = carouselImages[0].clientWidth; // Obtiene el ancho de la primera imagen
 
-        // Asegúrate de que las imágenes se muestren una al lado de la otra inicialmente
-        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
-        function moveSlide(direction) {
-            counter += direction;
+    
 
-            // Restricciones para evitar que el carrusel se desborde
-            if (counter < 0) {
-                counter = carouselImages.length - 1; // Vuelve a la última imagen si va hacia atrás desde la primera
-            } else if (counter >= carouselImages.length) {
-                counter = 0; // Vuelve a la primera imagen si va hacia adelante desde la última
-            }
-
-            carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-        }
-
-        // --- JavaScript para el Buscador ---
-        function performSearch() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            if (searchTerm.trim() === '') {
-                alert('Por favor, ingresa un término de búsqueda.');
-                return;
-            }
-            
-            // Aquí iría la lógica real de búsqueda.
-            // Para este ejemplo, simplemente mostramos una alerta.
-            // En un sitio real, esto implicaría:
-            // 1. Redireccionar a una página de resultados de búsqueda.
-            // 2. Filtrar una lista de productos visible en la página.
-            // 3. Hacer una petición a un servidor para buscar en una base de datos.
-
-            alert('Buscando: "' + searchTerm + '". En un sitio real, aquí verías los resultados.');
-            // Ejemplo de cómo podrías redirigir a una página de resultados:
-            // window.location.href = 'resultados_busqueda.html?q=' + encodeURIComponent(searchTerm);
-        }
-    </script>
-
-    <footer class="footer-content"> 
+<footer class="footer-content"> 
     <ul>
         <li><a href="https://www.google.com"><img class="mini-img" src="glogo.png"></a></li>
         <li><a href="http://talentosdigitales.ar"><img class="mini-img" src="talentlogo.png"></a></li>

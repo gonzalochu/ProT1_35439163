@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
         <link rel="STYLESHEET" href="miestilo.css">
         <title>quienes somos</title>
         
@@ -9,21 +10,10 @@
          <header>
             <h1>Bienvenidos</h1>
             <img src="reloj.png">
-                    <nav>
-                        <ul>
-                            <li><a href="principal.html">Home</a></li>
-                            <li><a href="#">Quienes somos</a></li>
-                            <li><a href="about.html">acerca de</a></li>
-                            <li><a href="login.html">login</a></li>
-                        </ul>
-                    
-                    </header>
-                        <main> 
+        </header>
+<main> 
 
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Buscar productos...">            
-            <button onclick="performSearch()">Buscar</button>
-        </div>
+        
 
 
         <div class="divi1">
@@ -39,81 +29,8 @@
         </div>
 
         
-         <section class="team-section">
-            <h2>Conocé a Nuestro Equipo</h2>
-            <div class="cards-container">
-                <div class="card">
-                    <img src="jacinto.png" alt="Foto de jacinto Pérez" class="card-img">
-                    <h3>jacinto Pérez</h3>
-                    <p>Fundador y Diseñador Principal.</p>
-                    <p>Con más de 20 años de experiencia, jacinto lidera la visión creativa y el desarrollo de nuestros diseños más innovadores.</p>
-                </div>
-
-                <div class="card">
-                    <img src="mateo.png" alt="Foto de mateo García" class="card-img">
-                    <h3>mateo García</h3>
-                    <p>Director de Operaciones.</p>
-                    <p>mateo garantiza que cada reloj se fabrique con la máxima calidad y eficiencia, desde la selección de materiales hasta la entrega final.</p>
-                </div>
-
-                <div class="card">
-                    <img src="yolanda.png" alt="Foto de Yolanda Ruiz" class="card-img">
-                    <h3>Yolanda Ruiz</h3>
-                    <p>Jefa de Atención al Cliente.</p>
-                    <p>Yolanda y su equipo están dedicados a asegurar que cada cliente tenga una experiencia excepcional, resolviendo dudas y brindando soporte.</p>
-                </div>
-
-            </div>
-        </section>
-
-        ---
-
-        <section class="values-section">
-            <h2>Nuestros Valores</h2>
-            <div class="cards-container">
-                <div class="card">
-                    <h3>Innovación</h3>
-                    <p>Constantemente buscamos nuevas ideas y tecnologías para ofrecer diseños únicos y funcionalidades avanzadas.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Calidad</h3>
-                    <p>Utilizamos solo las mejores materias primas y procesos de fabricación rigurosos para garantizar la durabilidad de cada reloj.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Cliente Primero</h3>
-                    <p>Nos enfocamos en entender y superar las expectativas de nuestros clientes, ofreciendo productos personalizados y un servicio excepcional.</p>
-                </div>
-
-            </div>
-        </section>
-
+         
     </main>
-
-    <script>
-        
-
-        // --- JavaScript para el Buscador ---
-        function performSearch() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            if (searchTerm.trim() === '') {
-                alert('Por favor, ingresa un término de búsqueda.');
-                return;
-            }
-            
-            // Aquí iría la lógica real de búsqueda.
-            // Para este ejemplo, simplemente mostramos una alerta.
-            // En un sitio real, esto implicaría:
-            // 1. Redireccionar a una página de resultados de búsqueda.
-            // 2. Filtrar una lista de productos visible en la página.
-            // 3. Hacer una petición a un servidor para buscar en una base de datos.
-
-            alert('Buscando: "' + searchTerm + '". En un sitio real, aquí verías los resultados.');
-            // Ejemplo de cómo podrías redirigir a una página de resultados:
-            // window.location.href = 'resultados_busqueda.html?q=' + encodeURIComponent(searchTerm);
-        }
-    </script>
 
     <footer class="footer-content"> 
     <ul>

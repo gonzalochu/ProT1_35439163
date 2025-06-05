@@ -2,29 +2,18 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
         <link rel="STYLESHEET" href="miestilo.css">
         <title>acerca de nosotros</title>
         
     </head>
-         <header>
+        <header>
             <h1>Bienvenidos</h1>
             <img src="reloj.png">
-                    <nav>
-                        <ul>
-                            <li><a href="principal.html">Home</a></li>
-                            <li><a href="whoare.html">Quienes somos</a></li>
-                            <li><a href="#">acerca de</a></li>
-                            <li><a href="login.html">login</a></li>
-                        </ul>
                     
-                    </header>
-                        <main> 
-
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Buscar productos...">            
-            <button onclick="performSearch()">Buscar</button>
-        </div>
-
+                    
+        </header>
+<main> 
 
         <div class="divi1">
             <section>
@@ -35,29 +24,6 @@
                 </p>
             </section>
         </div>
-
-
-    <script>
-        // --- JavaScript para el Buscador ---
-        function performSearch() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            if (searchTerm.trim() === '') {
-                alert('Por favor, ingresa un término de búsqueda.');
-                return;
-            }
-            
-            // Aquí iría la lógica real de búsqueda.
-            // Para este ejemplo, simplemente mostramos una alerta.
-            // En un sitio real, esto implicaría:
-            // 1. Redireccionar a una página de resultados de búsqueda.
-            // 2. Filtrar una lista de productos visible en la página.
-            // 3. Hacer una petición a un servidor para buscar en una base de datos.
-
-            alert('Buscando: "' + searchTerm + '". En un sitio real, aquí verías los resultados.');
-            // Ejemplo de cómo podrías redirigir a una página de resultados:
-            // window.location.href = 'resultados_busqueda.html?q=' + encodeURIComponent(searchTerm);
-        }
-    </script>
 
     <footer class="footer-content"> 
     <ul>
