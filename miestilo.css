@@ -43,7 +43,7 @@ margin: 0 15px; /* Espacio entre los elementos de la lista */
 }
 
 .footer-content .mini-img{
-    display:block;
+    display:block; /* Mostrar la imagen como bloque */
     max-width: 80px;
     height: auto;
     border:none;
@@ -54,6 +54,40 @@ margin: 0 15px; /* Espacio entre los elementos de la lista */
     opacity: 0.8;
     transform: scale(1.05);
     transition: all 0.3s ease;
+}
+
+
+#carouselExample{
+    max-width: 50%;
+    margin: 0 auto; /* Centrar el carrusel horizontalmente */
+    position: relative; /* Posición relativa para el carrusel */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+    padding: 0 10px;
+}
+
+.carousel-img
+{
+    max-width: 100%; /* Asegurar que la imagen no exceda el ancho del carrusel */
+    height: auto; /* Mantener la proporción de aspecto */
+    display: block;     
+}
+
+.carousel-control-next{
+    right: 0; /* Alinear el botón derecho al borde derecho del carrusel */
+}
+
+.carousel-control-prev{
+    left: 0; /* Alinear el botón izquierdo al borde izquierdo del carrusel */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #69bd45; /* Color de fondo verde para los iconos de control */
+    border-radius: 50%; /* Bordes redondeados para los iconos */
 }
 
 /* Estilos para el nav y enlaces de ul y li */
