@@ -35,7 +35,7 @@
           <a class="nav-link" href="#">registro</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">login</a>
+          <a class="nav-link" href="login.html">login</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -61,7 +61,37 @@
 </nav>
         </header>
  
-        
+        <div class="form-container">
+        <h2 class="text-center mb-4">Registrar usuario</h2>
+
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="correo@algo.com">
+            </div>
+            <div class="mb-3">
+                <label for="usuario" class="form-label">Usuario</label>
+                <input type="text" class="form-control" id="usuario" placeholder="Usuario">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Contraseña (mínimo 5 caracteres)">
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="btn btn-success flex-fill">Guardar</button>
+                <button type="button" class="btn btn-danger flex-fill">cancelar</button>
+            </div>
+        </form>
+    </div>
 
         
     </body>

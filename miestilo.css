@@ -90,6 +90,35 @@ margin: 0 15px; /* Espacio entre los elementos de la lista */
     border-radius: 50%; /* Bordes redondeados para los iconos */
 }
 
+.form-container {
+            background-color: #ffffff; /* Fondo blanco para el formulario */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            max-width: 500px; /* Ancho máximo del formulario */
+            width: 100%; /* Ocupa todo el ancho disponible hasta el max-width */
+            margin: 0 auto; /* Centrar el formulario horizontalmente */
+        }
+        .form-label {
+            font-weight: bold; /* Etiquetas en negrita */
+            margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+        }
+        .form-control {
+            margin-bottom: 15px; /* Espacio debajo de cada campo de entrada */
+        }
+        .btn-success {
+            background-color: #28a745; /* Verde Bootstrap */
+            border-color: #28a745;
+        }
+        .btn-danger {
+            background-color: #dc3545; /* Rojo Bootstrap */
+            border-color: #dc3545;
+        }
+        .btn-group {
+            display: flex; /* Para que los botones estén uno al lado del otro */
+            gap: 10px; /* Espacio entre los botones */
+        }
+
 /* Estilos para el nav y enlaces de ul y li */
 nav {
 background-color: #4caf50;

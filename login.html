@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale= 1.0">
         <link rel="STYLESHEET" href="miestilo.css">
         <link rel="STYLESHEET" href="assets/css/bootstrap.min.css">
-        <title>Relojes increibles</title>        
+        <title>Registrarse</title>        
     </head>
 
 <main>
@@ -23,7 +23,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="principal.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">acerca de</a>
@@ -35,7 +35,7 @@
           <a class="nav-link" href="registro.html">registro</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login.html">login</a>
+          <a class="nav-link" href="#">login</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -61,16 +61,29 @@
 </nav>
         </header>
  
+        <div class="form-container">
+        <h2 class="text-center mb-4">Iniciar Sesion</h2>
 
-        <div class="divi1">
-            <section>
-                <p class="texto1" style="color:rgb(20, 162, 180)">Somos una empresa que se dedica a la 
-                    venta de relojes de mesa y pared con diseños únicos e innovadores. 
-                    Utilizamos materia prima de calidad. Elaboramos productos a la medida del cliente.</p>
-                <p>Aquí encontrarás información sobre nuestros productos, comunicate con nosotros y recibí nuestras
-                    novedades.</p>
-            </section>
-        </div>           
+        <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="correo">
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Contraseña">
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="btn btn-success flex-fill">ingresar</button>
+                <button type="button" class="btn btn-danger flex-fill">cancelar</button>
+            </div>
+            <p>aun no se registro? <a href="registro.html">registrese aqui</a></p> 
+        </form>
+    </div>
+
+        
     </body>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
