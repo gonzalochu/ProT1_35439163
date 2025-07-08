@@ -5,46 +5,86 @@ font-family: Arial, sans-serif;
 margin: 0;
 padding: 0;
 }
+
 header {
 background-color: #69bd45;
 color: #fff;
 text-align: center;
 padding: 20px;
 }
+
 section {
 padding: 20px; /* espaciado para la sección de 20 pixeles */}
+
 footer {
 background-color: #4caf50; /* Color de fondo del footer */
 color: #fff;
-padding: 20px 0; }
+padding: 20px 0;
+text-align: center;
+}
+
 .footer-content {
 max-width: 800px; /* Ancho máximo del contenido del footer */
 margin: 0 auto; /* Centrar el contenido del footer horizontalmente */
-text-align: center; }
+}
+
+.footer-content ul {
+list-style: none; /* Eliminar los puntos de la lista */
+margin: 0; /* Eliminar el margen de la lista */
+padding: 0; /* Eliminar el padding de la lista */
+display: flex; /* Usar flexbox para alinear los elementos */
+justify-content: center; /* Centrar los elementos horizontalmente */
+align-items: center;
+flex-wrap: wrap;
+}
+
+.footer-content ul li {
+margin: 0 15px; /* Espacio entre los elementos de la lista */
+}
+
+.footer-content .mini-img{
+    display:block;
+    max-width: 80px;
+    height: auto;
+    border:none;
+    border-radius: 0;
+}
+
+.footer-content ul li a:hover img.mini-img{
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
 /* Estilos para el nav y enlaces de ul y li */
 nav {
 background-color: #4caf50;
 padding: 10px;
 }
+
 nav ul {
-list-style: none;
+list-style: none; 
 margin: 0;
 padding: 0;
 text-align: center;
 }
+
 nav ul li {
 display:inline-block;
 margin-right: 20px;
 }
+
 nav ul li a {
 color: #fff;
 text-decoration: none;
 padding: 8px 16px;
 border-radius: 5px;
 }
+
 nav ul li a:hover {
 background-color: #2f8247;
 }
+
 /* Estilos para las imágenes */
 img {
 display: block; /* Para eliminar el espacio adicional que algunos navegadores agregan a las img. */
